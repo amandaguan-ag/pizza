@@ -10,7 +10,7 @@ function Pizza() {
     this.pizzaCost = 0;
 }
 
-Pizza Object Methods
+//Pizza Object Methods
 Pizza.prototype.setBaseCost = function(){
     if (this.pizzaSize === "small") {
         this.baseCost = 10;
