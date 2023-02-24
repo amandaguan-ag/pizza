@@ -6,7 +6,7 @@ function Pizza(name, size, toppings) {
 }
 
 Pizza.prototype.calculatePrice = function () {
-  var totalPrice = 0;
+  let totalPrice = 0;
   if (this.pizzaSize === "extra-large") {
     this.totalPrice = 10;
   } else if (this.pizzaSize === "large") {
