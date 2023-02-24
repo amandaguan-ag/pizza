@@ -43,3 +43,20 @@ Test: "It should return a Pizza object with three properties for buyer name, siz
 Code: const pizza = new Pizza("Bob", "medium", 3);<br />
 Expected Output: Pizza { customerName: "Bob", pizzaSize: "medium", orderToppings: 3 }<br />
 
+#### Describe: Pizza.prototype.getBasePrice()
+
+Test 1: "It should return base price for extra-large pizza"<br />
+Code: const pizza = new Pizza("Bob", "extra-large", 3); const result = pizza.getBasePrice();<br />
+Expected Output:10<br />
+
+Test 2: "It should return base price for large pizza"<br />
+Code: const pizza = new Pizza("Bob", "large", 3); const result = pizza.getBasePrice();<br />
+Expected Output:8<br />
+
+Test 3: "It should return base price for medium pizza"<br />
+Code: const pizza = new Pizza("Bob", "medium", 3); const result = pizza.getBasePrice();<br />
+Expected Output:6<br />
+
+Test 4: "It should return base price for small pizza"<br />
+Code: const pizza = new Pizza("Bob", "small", 3); const result = pizza.getBasePrice();<br />
+Expected Output:4<br />
