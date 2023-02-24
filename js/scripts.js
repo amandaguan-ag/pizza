@@ -5,30 +5,37 @@ function Pizza(name, size, toppings) {
   this.orderToppings = toppings;
 }
 
-Pizza.prototype.calculatePrice = function () {
-  let totalPrice = 0;
-  if (this.pizzaSize === "extra-large") {
-    this.totalPrice = 10;
-  } else if (this.pizzaSize === "large") {
-    this.totalPrice = 8;
-  } else if (this.pizzaSize === "medium") {
-    this.totalPrice = 6;
-  } else {
-    this.totalPrice = 4;
-  }
-
-  if (this.orderToppings === 4) {
-    this.totalPrice += 4;
-  } else if (this.orderToppings === 3) {
-    this.totalPrice += 3;
-  } else if (this.orderToppings === 2) {
-    this.totalPrice += 2;
-  } else if (this.orderToppings === 1) {
-    this.totalPrice += 1;
-  } else {
-  }
-  return this.totalPrice;
-};
+Pizza.prototype.getBasePrice = function () {
+    if (this.pizzaSize === "extra-large") {
+      return 10;
+    } else if (this.pizzaSize === "large") {
+      return 8;
+    } else if (this.pizzaSize === "medium") {
+      return 6;
+    } else {
+      return 4;
+    }
+  };
+  
+  Pizza.prototype.getToppingsPrice = function () {
+    if (this.orderToppings === 4) {
+      return 4;
+    } else if (this.orderToppings === 3) {
+      return 3;
+    } else if (this.orderToppings === 2) {
+      return 2;
+    } else if (this.orderToppings === 1) {
+      return 1;
+    } else {
+      return 0;
+    }
+  };
+  
+  Pizza.prototype.calculatePrice = function () {
+    const basePrice = this.getBasePrice();
+    const toppingsPrice = this.getToppingsPrice();
+    return basePrice + toppingsPrice;
+  };
 
 // User Logic
 function handleFormSubmission(event) {
