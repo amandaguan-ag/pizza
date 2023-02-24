@@ -60,3 +60,26 @@ Expected Output:6<br />
 Test 4: "It should return base price for small pizza"<br />
 Code: const pizza = new Pizza("Bob", "small", 3); const result = pizza.getBasePrice();<br />
 Expected Output:4<br />
+
+#### Describe: Pizza.prototype.getToppingsPrice()
+
+Test 1: "It should return toppings price for 4 toppings"
+Code: const pizza = new Pizza("Bob", "medium", 4); const result = pizza.getToppingsPrice();
+Expected Output:4<br />
+
+Test 2: "It should return toppings price for 3 toppings"
+Code: const pizza = new Pizza("Bob", "medium", 3); const result = pizza.getToppingsPrice();
+Expected Output:3<br />
+
+Test 3: "It should return toppings price for 2 toppings"
+Code: const pizza = new Pizza("Bob", "medium", 2); const result = pizza.getToppingsPrice();
+Expected Output:2<br />
+
+Test 4: "It should return toppings price for 1 toppings"
+Code: const pizza = new Pizza("Bob", "medium", 1); const result = pizza.getToppingsPrice();
+Expected Output:1<br />
+
+Test 5: "It should return toppings price for 0 toppings"
+Code: const pizza = new Pizza("Bob", "medium", 0); const result = pizza.getToppingsPrice();
+Expected Output:0<br />
+
