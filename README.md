@@ -6,12 +6,17 @@
 
 _This is a webpage that allows the user to create a pizza order (pizza size and toppings) and see how much it will cost based on their selections._
 
+## Lesson learnt
+- I structured the application data with JavaScript objects created with constructor functions. 
+- I added functionality to Pizza objects by creating getBasePrice, getToppingsPrice, and calculatePrice methods to the object's prototype. 
+- To ensure that the application is efficient and effective, I implemented the 'separation of concerns' principle to create JavaScript functions that focus on doing just one thing. 
+- Additionally, I used event delegation to attach an event listener to a parent element that fires for a child element, which enhances the application's functionality and user experience.
+
 ## link to Github Page
 
-_Not available _
+amandaguan-ag.github.io/pizza/
 
 ## Technologies Used
-
 - _HTML_
 - _CSS_
 - _bootstrap_
