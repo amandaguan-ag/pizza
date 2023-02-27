@@ -2,7 +2,73 @@ h1 {
   text-align: center;
 }
 
+/* Apply some margin and padding to the container */
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+/* Style the jumbotron */
+.jumbotron {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+/* Style the form */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Style the label */
+label {
+  font-weight: bold;
+}
+
+/* Style the input */
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the checkbox */
+.checkbox {
+  margin-bottom: 10px;
+}
+
+/* Style the submit button */
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  font-weight: bold;
+}
+
+/* Style the show-price section */
 #show-price {
   text-align: center;
-  display: none;
+  text-align: center;
+  margin-top: 20px;
+  /* display: none; */
+}
+/* Style the name and total */
+#name {
+  font-weight: bold;
+}
+
+#total {
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Style the pizza emoji */
+.em-pizza:before {
+  content: "\1F355";
 }
