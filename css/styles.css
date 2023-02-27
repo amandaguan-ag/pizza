@@ -56,7 +56,7 @@ select {
   text-align: center;
   text-align: center;
   margin-top: 20px;
-  /* display: none; */
+  display: none;
 }
 /* Style the name and total */
 #name {
